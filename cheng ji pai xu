@@ -1,0 +1,28 @@
+scanf_s("%f%f%f", &fin_a, &fin_b, &fin_c);
+	if (fin_a > fin_b && fin_a > fin_c)
+	{
+		printf("最高分：%.1f", fin_a);
+		if (fin_b > fin_c)
+			printf("，最低分：%.1f", fin_c);
+		else
+			printf("，最低分：%.1f", fin_b);
+	}
+	else if (fin_b > fin_a && fin_b > fin_c)
+	{
+		printf("最高分：%.1f", fin_b);
+		if (fin_a > fin_c)
+			printf("，最低分：%.1f", fin_c);
+		else
+			printf("，最低分：%.1f", fin_a);
+	}
+	else if (fin_c > fin_b && fin_c > fin_a)
+	{
+		printf("最高分：%.1f", fin_c);
+		if (fin_b > fin_a)
+			printf("，最低分：%.1f", fin_a);
+		else
+			printf("，最低分：%.1f", fin_b);
+	}
+	
+	return 0;
+}
